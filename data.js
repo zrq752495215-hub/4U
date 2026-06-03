@@ -10,16 +10,20 @@ window.FOUR_U_DATA = {
       text: "飞机刚起飞，你通常怎么选跳点？",
       dimension: "EI",
       options: [
-        { text: "先问全队想不想来点刺激的", score: "E" },
-        { text: "心里已经标好了自己的安静路线", score: "I" }
+        { text: "直接开麦提议：来个热闹点的地方", score: "E" },
+        { text: "先听队友想法，再帮大家拍板", score: "E" },
+        { text: "默默标一个安全点，等队友发现", score: "I" },
+        { text: "喜欢跳人少的边缘点，慢慢发育", score: "I" }
       ]
     },
     {
       text: "落地发现隔壁队很多脚步，你会？",
       dimension: "SN",
       options: [
-        { text: "先报人数、方向和楼层", score: "S" },
-        { text: "凭感觉判断他们马上要压过来", score: "N" }
+        { text: "报清人数、方向、楼层和距离", score: "S" },
+        { text: "先听脚步节奏，判断他们具体位置", score: "S" },
+        { text: "感觉他们马上会包过来，先提醒队友", score: "N" },
+        { text: "根据枪声和路线猜他们下一步想法", score: "N" }
       ]
     },
     {
@@ -27,7 +31,9 @@ window.FOUR_U_DATA = {
       dimension: "TF",
       options: [
         { text: "先看圈、枪线和撤退路线", score: "T" },
-        { text: "队友想打，那就一起打出气势", score: "F" }
+        { text: "判断有没有击倒信息，够不够收割", score: "T" },
+        { text: "队友想打，那就一起打出气势", score: "F" },
+        { text: "只要大家状态好，输赢都能接受", score: "F" }
       ]
     },
     {
@@ -35,7 +41,9 @@ window.FOUR_U_DATA = {
       dimension: "JP",
       options: [
         { text: "固定路线，缺什么补什么", score: "J" },
-        { text: "随手开门，惊喜全靠缘分", score: "P" }
+        { text: "先把药、投掷物、配件按计划补齐", score: "J" },
+        { text: "随手开门，惊喜全靠缘分", score: "P" },
+        { text: "看见什么都想摸一下，背包经常满", score: "P" }
       ]
     },
     {
@@ -43,7 +51,9 @@ window.FOUR_U_DATA = {
       dimension: "EI",
       options: [
         { text: "主动打招呼，顺便活跃一下气氛", score: "E" },
-        { text: "默默观察，用行动配合就好", score: "I" }
+        { text: "用简短报点把队伍沟通带起来", score: "E" },
+        { text: "默默观察，用行动配合就好", score: "I" },
+        { text: "不开麦也没关系，我会看小地图", score: "I" }
       ]
     },
     {
@@ -51,7 +61,9 @@ window.FOUR_U_DATA = {
       dimension: "SN",
       options: [
         { text: "立刻找高点，把信息报清楚", score: "S" },
-        { text: "看看地形，预判下一波人会从哪来", score: "N" }
+        { text: "记录枪声方向，给队友补充细节", score: "S" },
+        { text: "看看地形，预判下一波人会从哪来", score: "N" },
+        { text: "盯着圈边，感觉那里迟早有人冒头", score: "N" }
       ]
     },
     {
@@ -59,7 +71,9 @@ window.FOUR_U_DATA = {
       dimension: "TF",
       options: [
         { text: "先封烟清点，能救再救", score: "T" },
-        { text: "烟雾弹一丢，先把人扶起来", score: "F" }
+        { text: "先反打压住对面，救援要有条件", score: "T" },
+        { text: "烟雾弹一丢，先把人扶起来", score: "F" },
+        { text: "嘴上喊别怕，身体已经冲过去了", score: "F" }
       ]
     },
     {
@@ -67,7 +81,9 @@ window.FOUR_U_DATA = {
       dimension: "JP",
       options: [
         { text: "提前进圈，占住能打能撤的位置", score: "J" },
-        { text: "再搜一会儿，说不定路上还能发财", score: "P" }
+        { text: "先安排载具、路线和停车点", score: "J" },
+        { text: "再搜一会儿，说不定路上还能发财", score: "P" },
+        { text: "边跑边看，哪里有机会就往哪里拐", score: "P" }
       ]
     },
     {
@@ -75,7 +91,9 @@ window.FOUR_U_DATA = {
       dimension: "EI",
       options: [
         { text: "来一句：兄弟们，咱们还活着吗", score: "E" },
-        { text: "继续听声辨位，沉默也是战术", score: "I" }
+        { text: "报个小信息，让大家重新上线", score: "E" },
+        { text: "继续听声辨位，沉默也是战术", score: "I" },
+        { text: "安静挺好，我正好进入状态", score: "I" }
       ]
     },
     {
@@ -83,7 +101,9 @@ window.FOUR_U_DATA = {
       dimension: "SN",
       options: [
         { text: "枪声、击杀提示和脚步这些硬信息", score: "S" },
-        { text: "对手心理和他们可能犯的错", score: "N" }
+        { text: "哪里有烟、哪里有人倒过这些线索", score: "S" },
+        { text: "对手心理和他们可能犯的错", score: "N" },
+        { text: "根据圈型猜他们最想藏的位置", score: "N" }
       ]
     },
     {
@@ -91,7 +111,9 @@ window.FOUR_U_DATA = {
       dimension: "TF",
       options: [
         { text: "下次等我架住再拉出去", score: "T" },
-        { text: "没事没事，这波至少很有节目效果", score: "F" }
+        { text: "这波问题是角度没同步，下一波改", score: "T" },
+        { text: "没事没事，这波至少很有节目效果", score: "F" },
+        { text: "先稳住心态，下一局我们打回来", score: "F" }
       ]
     },
     {
@@ -99,7 +121,9 @@ window.FOUR_U_DATA = {
       dimension: "JP",
       options: [
         { text: "规划载具、烟路和停靠点", score: "J" },
-        { text: "看哪边顺眼就从哪边冲", score: "P" }
+        { text: "先让队友分批过，减少一起白给", score: "J" },
+        { text: "看哪边顺眼就从哪边冲", score: "P" },
+        { text: "边走边扔烟，活下来再说细节", score: "P" }
       ]
     },
     {
@@ -107,7 +131,9 @@ window.FOUR_U_DATA = {
       dimension: "EI",
       options: [
         { text: "喊全队一起看，顺便安排火力", score: "E" },
-        { text: "自己先架着，等机会再开口", score: "I" }
+        { text: "边笑边提醒：这位朋友有点辛苦", score: "E" },
+        { text: "自己先架着，等机会再开口", score: "I" },
+        { text: "不急着暴露，等他进到更好打的位置", score: "I" }
       ]
     },
     {
@@ -115,7 +141,9 @@ window.FOUR_U_DATA = {
       dimension: "SN",
       options: [
         { text: "数字方位、距离、掩体，一次说清", score: "S" },
-        { text: "他要绕了，我感觉他想偷侧身", score: "N" }
+        { text: "用建筑、树、坡这些参照物讲清楚", score: "S" },
+        { text: "他要绕了，我感觉他想偷侧身", score: "N" },
+        { text: "他们现在不打，应该是在等我们露破绽", score: "N" }
       ]
     },
     {
@@ -123,7 +151,9 @@ window.FOUR_U_DATA = {
       dimension: "TF",
       options: [
         { text: "看击倒、投掷物和站位，机会够才打", score: "T" },
-        { text: "队友状态来了，就该把气势打出来", score: "F" }
+        { text: "先算人数和夹角，别把优势送掉", score: "T" },
+        { text: "队友状态来了，就该把气势打出来", score: "F" },
+        { text: "如果大家都想冲，那就一起留个名场面", score: "F" }
       ]
     },
     {
@@ -131,7 +161,9 @@ window.FOUR_U_DATA = {
       dimension: "JP",
       options: [
         { text: "复盘哪里转移慢了、哪里没协同", score: "J" },
-        { text: "这局有没有名场面，快乐最重要", score: "P" }
+        { text: "想清楚下一局跳点和分工怎么改", score: "J" },
+        { text: "这局有没有名场面，快乐最重要", score: "P" },
+        { text: "先聊刚才最好笑的一幕，再开下一把", score: "P" }
       ]
     }
   ],

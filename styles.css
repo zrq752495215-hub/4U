@@ -238,8 +238,8 @@ h1 {
 
 .option-btn {
   width: 100%;
-  min-height: 78px;
-  padding: 16px;
+  min-height: 66px;
+  padding: 14px;
   color: var(--text);
   text-align: left;
   font-weight: 800;
