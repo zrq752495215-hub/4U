@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="4U 玩家人格测试，测一测你是哪一种绝地求生玩家。" />
+    <title>4U 玩家人格测试</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="homeScreen" class="screen home-screen active" aria-labelledby="homeTitle">
+        <div class="hero-mark" aria-hidden="true">
+          <img src="assets/4u-home.webp" alt="" />
+        </div>
+        <div class="home-copy">
+          <p class="eyebrow">PUBG STYLE CHECK</p>
+          <h1 id="homeTitle">玩家人格测试</h1>
+          <p class="subtitle">测一测，你是哪一种绝地求生玩家？</p>
+        </div>
+        <form id="startForm" class="start-panel">
+          <label for="nickname">你的游戏昵称</label>
+          <input id="nickname" name="nickname" type="text" maxlength="14" autocomplete="nickname" placeholder="例如：4U小队友" />
+          <button class="primary-btn" type="submit">开始测试</button>
+        </form>
+        <p class="guide-text">进入海岛之前，每个人都以为自己是战神。</p>
+      </section>
+
+      <section id="quizScreen" class="screen quiz-screen" aria-live="polite">
+        <div class="topbar">
+          <button id="backBtn" class="ghost-btn" type="button">上一题</button>
+          <span id="questionCounter" class="counter">1 / 16</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <article class="question-card">
+          <p id="dimensionHint" class="eyebrow"></p>
+          <h2 id="questionText"></h2>
+          <div id="optionsWrap" class="option-list"></div>
+        </article>
+      </section>
+
+      <section id="resultScreen" class="screen result-screen">
+        <div class="result-card">
+          <p class="eyebrow">4U 公会鉴定完成</p>
+          <p id="resultName" class="result-name"></p>
+          <img id="resultPersonaImage" class="persona-image" src="assets/personas/entj.webp" alt="" />
+          <div id="resultType" class="type-code">ENTJ</div>
+          <h2 id="resultTitle"></h2>
+          <p id="resultDesc" class="result-desc"></p>
+
+          <div id="dimensionBars" class="dimension-bars"></div>
+
+          <div class="info-grid">
+            <div>
+              <span>推荐队伍位置</span>
+              <strong id="positionText"></strong>
+            </div>
+            <div>
+              <span>最佳搭档类型</span>
+              <strong id="partnerText"></strong>
+            </div>
+          </div>
+
+          <div class="verdict-box">
+            <span>公会鉴定意见</span>
+            <p id="verdictText"></p>
+          </div>
+        </div>
+
+        <div class="action-stack">
+          <button id="copyResultBtn" class="primary-btn" type="button">复制测试结果</button>
+          <button id="posterBtn" class="secondary-btn" type="button">生成结果海报</button>
+          <button id="copyLinkBtn" class="secondary-btn" type="button">复制分享链接</button>
+          <button id="restartBtn" class="ghost-btn wide" type="button">重新测试</button>
+        </div>
+        <p id="toast" class="toast" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>本测试为 4U 公会娱乐内容，仅反映游戏风格，不属于专业人格测评。</footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
