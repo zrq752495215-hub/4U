@@ -10,8 +10,8 @@ window.FOUR_U_DATA = {
       text: "飞机刚起飞，你通常怎么选跳点？",
       dimension: "EI",
       options: [
-        { text: "直接开麦提议：去ROLL！", score: "E" },
-        { text: "先听队友想法，再综合决定", score: "E" },
+        { text: "直接开麦提议：来个热闹点的地方", score: "E" },
+        { text: "先听队友想法，再帮大家拍板", score: "E" },
         { text: "默默标一个安全点，等队友发现", score: "I" },
         { text: "喜欢跳人少的边缘点，慢慢发育", score: "I" }
       ]
@@ -21,8 +21,8 @@ window.FOUR_U_DATA = {
       dimension: "SN",
       options: [
         { text: "报清人数、方向、楼层和距离", score: "S" },
-        { text: "先听脚步节奏，焊一会墙", score: "S" },
-        { text: "感觉他们马上会包过来，呼叫队友", score: "N" },
+        { text: "先听脚步节奏，判断他们具体位置", score: "S" },
+        { text: "感觉他们马上会包过来，先提醒队友", score: "N" },
         { text: "根据枪声和路线猜他们下一步想法", score: "N" }
       ]
     },
@@ -41,8 +41,8 @@ window.FOUR_U_DATA = {
       dimension: "JP",
       options: [
         { text: "固定路线，缺什么补什么", score: "J" },
-        { text: "要先把固定的药、投掷物、配件都搜集齐", score: "J" },
-        { text: "随便搜，搜到什么用什么，惊喜全靠缘分", score: "P" },
+        { text: "先把药、投掷物、配件按计划补齐", score: "J" },
+        { text: "随手开门，惊喜全靠缘分", score: "P" },
         { text: "看见什么都想摸一下，背包经常满", score: "P" }
       ]
     },
@@ -110,10 +110,10 @@ window.FOUR_U_DATA = {
       text: "队友刚枪失误白给，你会说？",
       dimension: "TF",
       options: [
-        { text: "提醒下次等我架住再拉出去", score: "T" },
-        { text: "分析问题原因，指导他下一波改", score: "T" },
-        { text: "没事没事，这波倒了给了关键信息", score: "F" },
-        { text: "安抚队友，默默努力把劣势打回来", score: "F" }
+        { text: "下次等我架住再拉出去", score: "T" },
+        { text: "这波问题是角度没同步，下一波改", score: "T" },
+        { text: "没事没事，这波至少很有节目效果", score: "F" },
+        { text: "先稳住心态，下一局我们打回来", score: "F" }
       ]
     },
     {
@@ -121,7 +121,7 @@ window.FOUR_U_DATA = {
       dimension: "JP",
       options: [
         { text: "规划载具、烟路和停靠点", score: "J" },
-        { text: "先让队友分批开车，减少一起白给", score: "J" },
+        { text: "先让队友分批过，减少一起白给", score: "J" },
         { text: "看哪边顺眼就从哪边冲", score: "P" },
         { text: "边走边扔烟，活下来再说细节", score: "P" }
       ]
